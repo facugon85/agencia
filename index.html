@@ -64,22 +64,14 @@
             padding: 20px;
             border-radius: 5px;
         }
-        /* Navbar */
-        .navbar {
-            background-color: #212529;
+        /* Logo de la Organización */
+        .logo {
+            max-width: 150px;
+            height: auto;
         }
-        .navbar-brand {
-            color: #ffc107 !important;
-        }
-        .nav-link {
-            color: #f8f9fa !important;
-        }
-        .nav-link:hover {
-            color: #ffc107 !important;
-        }
-        /* Espaciado para el contenido debajo del navbar fijo */
+        /* Espaciado para el contenido */
         .content {
-            padding-top: 70px;
+            padding-top: 20px;
         }
         /* Ajustes para dispositivos móviles */
         @media (max-width: 576px) {
@@ -88,7 +80,7 @@
                 font-size: 1.2rem;
             }
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             h2 {
                 font-size: 1.8rem;
@@ -98,6 +90,9 @@
             }
             .table thead th, .table tbody td {
                 font-size: 1.1rem;
+            }
+            .logo {
+                max-width: 100px;
             }
         }
         /* Estilo de Tablas */
@@ -114,43 +109,19 @@
 </head>
 <body>
 
-    <!-- Barra de Navegación -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Concesionaria de Autos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#introduccion">Introducción</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#objetivos">Objetivos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#supuestos">Supuestos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#calculo-primas">Primas y Comisiones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#analisis-escenarios">Escenarios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyeccion-ventas">Ventas Mensuales</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#distribucion-polizas">Distribución Pólizas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#calculo-ingresos">Ingresos Mensuales</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyeccion-ingresos">Ingresos Semestrales</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#estrategias">Estrategias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#consideraciones">Consideraciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#conclusiones">Conclusiones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#recomendaciones">Recomendaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#anexos">Anexos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
     <div class="container content">
 
-        <!-- Título Principal -->
-        <div class="text-center my-5">
-            <h1 class="text-uppercase">Proyecto: Concesionaria de Autos</h1>
-            <h3 class="mb-3">Presentado por: Facundo Gonzalez y Alejandra Furchi</h3>
-            <h5 class="mb-5">Fecha: miércoles 13 de 2024</h5>
+        <!-- Encabezado con Título y Logo -->
+        <div class="row align-items-center mb-5">
+            <div class="col-12 col-md-8 text-center text-md-start mb-3 mb-md-0">
+                <h1 class="text-uppercase">Proyecto: Concesionaria de Autos</h1>
+                <h3 class="mb-3">Presentado por: Facundo Gonzalez y Alejandra Furchi</h3>
+                <h5 class="mb-0">Fecha: miércoles 13 de 2024</h5>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-end">
+                <!-- Reemplaza 'ruta/al/logo.png' con la ruta real de tu logo -->
+                <img src="ruta/al/logo.png" alt="Logo de la Organización" class="logo">
+            </div>
         </div>
 
         <!-- Índice -->
@@ -172,6 +143,7 @@
                 <li class="list-group-item"><a href="#recomendaciones">Recomendaciones</a></li>
                 <li class="list-group-item"><a href="#anexos">Anexos</a></li>
                 <li class="list-group-item"><a href="#preguntas">Preguntas y Respuestas</a></li>
+                <li class="list-group-item"><a href="#reflexion">Reflexión y Análisis Financiero</a></li>
             </ol>
         </div>
 
@@ -496,12 +468,360 @@
             </div>
         </div>
 
-        <!-- Resto de las Secciones -->
-        <!-- Puedes continuar agregando más secciones siguiendo la misma estructura -->
+        <!-- Reflexión y Análisis Financiero del Proyecto -->
+        <div class="mb-5">
+            <div class="card bg-dark text-white">
+                <div class="card-body">
+                    <h2 id="reflexion" class="card-title"><i class="bi bi-clipboard-data"></i> 11. Reflexión y Análisis Financiero del Proyecto</h2>
+                    
+                    <!-- Reflexión sobre los Datos Proyectados -->
+                    <h3 class="mt-4"><i class="bi bi-graph-up-arrow"></i> 1. Reflexión sobre los Datos Proyectados</h3>
+                    <div class="mb-3">
+                        <p><strong>a. Escalabilidad del Modelo de Negocio:</strong></p>
+                        <p>El modelo muestra una clara escalabilidad: a medida que aumentan las ventas de vehículos y las tasas de conversión de seguros, los ingresos por comisiones también crecen proporcionalmente. Esto indica que inversiones adicionales en marketing y capacitación podrían traducirse en mayores ingresos.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>b. Importancia de la Tasa de Conversión:</strong></p>
+                        <p>Las tasas de conversión del 30%, 40% y 50% demuestran que incluso incrementos modestos en la efectividad de las ventas pueden tener un impacto significativo en los ingresos. Mejorar estas tasas mediante estrategias de ventas más efectivas podría acelerar la recuperación de la inversión y aumentar la rentabilidad.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>c. Diversificación de Coberturas:</strong></p>
+                        <p>La distribución de pólizas entre Terceros Completo (60%) y Todo Riesgo (40%) sugiere una diversificación equilibrada que puede atraer a diferentes segmentos de clientes, optimizando así las oportunidades de ventas.</p>
+                    </div>
+
+                    <!-- Estimación de la Inversión Necesaria -->
+                    <h3 class="mt-4"><i class="bi bi-cash-stack"></i> 2. Estimación de la Inversión Necesaria</h3>
+                    <div class="mb-3">
+                        <p>Para determinar cuánto se debería invertir y en qué aspectos, consideremos los siguientes componentes clave:</p>
+                    </div>
+                    
+                    <h4 class="mt-3"><i class="bi bi-arrow-right"></i> a. Costos Iniciales:</h4>
+                    <ul>
+                        <li><strong>Instalación de la Oficina:</strong>
+                            <ul>
+                                <li>Alquiler de espacio: $500,000 ARS</li>
+                                <li>Mobiliario y equipos: $300,000 ARS</li>
+                            </ul>
+                        </li>
+                        <li><strong>Licencias y Permisos:</strong>
+                            <ul>
+                                <li>Registro legal y permisos operativos: $200,000 ARS</li>
+                            </ul>
+                        </li>
+                        <li><strong>Marketing y Publicidad Inicial:</strong>
+                            <ul>
+                                <li>Campañas de lanzamiento: $400,000 ARS</li>
+                            </ul>
+                        </li>
+                        <li><strong>Software y Tecnología:</strong>
+                            <ul>
+                                <li>CRM y herramientas de gestión de clientes: $200,000 ARS</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Total Costos Iniciales Estimados:</strong> <strong>$1,600,000 ARS</strong></p>
+
+                    <h4 class="mt-3"><i class="bi bi-arrow-right"></i> b. Costos Operativos Mensuales:</h4>
+                    <ul>
+                        <li><strong>Salarios:</strong>
+                            <ul>
+                                <li>Productor de Seguros: $300,000 ARS</li>
+                                <li>Personal de Soporte y Ventas: $200,000 ARS</li>
+                            </ul>
+                        </li>
+                        <li><strong>Marketing Continuo:</strong>
+                            <ul>
+                                <li>Publicidad digital y tradicional: $150,000 ARS</li>
+                            </ul>
+                        </li>
+                        <li><strong>Gastos Generales:</strong>
+                            <ul>
+                                <li>Servicios (agua, luz, internet): $50,000 ARS</li>
+                                <li>Suministros y otros: $50,000 ARS</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Total Costos Operativos Mensuales Estimados:</strong> <strong>$750,000 ARS</strong></p>
+
+                    <!-- Proyección de Ingresos y Recuperación de la Inversión -->
+                    <h3 class="mt-4"><i class="bi bi-graph-up"></i> 3. Proyección de Ingresos y Recuperación de la Inversión</h3>
+                    <div class="mb-3">
+                        <p>Basándonos en los datos proporcionados, analicemos dos escenarios: <strong>Conservador</strong> (50 vehículos/mes, 30% conversión) y <strong>Optimista</strong> (100 vehículos/mes, 50% conversión).</p>
+                    </div>
+                    
+                    <!-- Escenario Conservador -->
+                    <h4 class="mt-3"><i class="bi bi-arrow-right"></i> a. Escenario Conservador:</h4>
+                    <ul>
+                        <li><strong>Vehículos Vendidos:</strong> 50/mes</li>
+                        <li><strong>Tasa de Conversión:</strong> 30%</li>
+                        <li><strong>Pólizas Vendidas:</strong> 15/mes
+                            <ul>
+                                <li>Terceros Completo: 9 pólizas</li>
+                                <li>Todo Riesgo: 6 pólizas</li>
+                            </ul>
+                        </li>
+                        <li><strong>Ingresos por Comisiones:</strong>
+                            <ul>
+                                <li>Terceros Completo: 9 x $90,000 ARS = <strong>$810,000 ARS</strong></li>
+                                <li>Todo Riesgo: 6 x $180,000 ARS = <strong>$1.080.000 ARS</strong></li>
+                                <li><strong>Total Ingresos Mensuales:</strong> <strong>$1.890.000 ARS</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong>Ingresos Netos Mensuales:</strong>
+                            <ul>
+                                <li>Ingresos Totales: $1.890.000 ARS</li>
+                                <li>Costos Operativos: $750,000 ARS</li>
+                                <li><strong>Ingresos Netos:</strong> $1.140.000 ARS</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tiempo de Recuperación de la Inversión Inicial:</strong>
+                            <ul>
+                                <li>Inversión Inicial: $1.600.000 ARS</li>
+                                <li>Ingresos Netos Mensuales: $1.140.000 ARS</li>
+                                <li><strong>Tiempo para Recuperar la Inversión:</strong> Aproximadamente 1.4 meses</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Escenario Optimista -->
+                    <h4 class="mt-3"><i class="bi bi-arrow-right"></i> b. Escenario Optimista:</h4>
+                    <ul>
+                        <li><strong>Vehículos Vendidos:</strong> 100/mes</li>
+                        <li><strong>Tasa de Conversión:</strong> 50%</li>
+                        <li><strong>Pólizas Vendidas:</strong> 50/mes
+                            <ul>
+                                <li>Terceros Completo: 30 pólizas</li>
+                                <li>Todo Riesgo: 20 pólizas</li>
+                            </ul>
+                        </li>
+                        <li><strong>Ingresos por Comisiones:</strong>
+                            <ul>
+                                <li>Terceros Completo: 30 x $90,000 ARS = <strong>$2.700.000 ARS</strong></li>
+                                <li>Todo Riesgo: 20 x $180,000 ARS = <strong>$3.600.000 ARS</strong></li>
+                                <li><strong>Total Ingresos Mensuales:</strong> <strong>$6.300.000 ARS</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong>Ingresos Netos Mensuales:</strong>
+                            <ul>
+                                <li>Ingresos Totales: $6.300.000 ARS</li>
+                                <li>Costos Operativos: $750.000 ARS</li>
+                                <li><strong>Ingresos Netos:</strong> $5.550.000 ARS</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tiempo de Recuperación de la Inversión Inicial:</strong>
+                            <ul>
+                                <li>Inversión Inicial: $1.600.000 ARS</li>
+                                <li>Ingresos Netos Mensuales: $5.550.000 ARS</li>
+                                <li><strong>Tiempo para Recuperar la Inversión:</strong> Aproximadamente 0.29 meses (~9 días)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Reflexiones Finales -->
+                    <h3 class="mt-4"><i class="bi bi-lightbulb-fill"></i> 4. Reflexiones Finales</h3>
+                    <div class="mb-3">
+                        <p><strong>a. Alta Rentabilidad y Rápida Recuperación:</strong></p>
+                        <p>Los escenarios analizados muestran que, incluso en condiciones conservadoras, la inversión inicial puede recuperarse en aproximadamente 1.4 meses. En condiciones optimistas, la recuperación es casi inmediata, en menos de un mes.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>b. Importancia de la Gestión Eficiente:</strong></p>
+                        <p>Para maximizar la rentabilidad y minimizar el tiempo de recuperación, es crucial:</p>
+                        <ul>
+                            <li><strong>Optimizar las Tácticas de Venta:</strong> Capacitación continua del personal para mejorar las tasas de conversión.</li>
+                            <li><strong>Estrategias de Marketing Efectivas:</strong> Invertir en canales que generen mayor retorno sobre la inversión.</li>
+                            <li><strong>Monitoreo y Ajuste Constante:</strong> Evaluar periódicamente el desempeño y ajustar estrategias según sea necesario.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>c. Riesgos a Considerar:</strong></p>
+                        <ul>
+                            <li><strong>Variabilidad en las Ventas de Vehículos:</strong> Factores externos como la economía pueden afectar las ventas de automóviles y, por ende, las pólizas de seguros.</li>
+                            <li><strong>Competencia en el Mercado:</strong> Otros asesores o compañías de seguros podrían influir en las tasas de conversión.</li>
+                            <li><strong>Cambios Regulatorios:</strong> Alteraciones en las normativas de seguros podrían impactar las operaciones.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reflexión y Análisis Financiero del Proyecto -->
+            <div class="mb-5">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h2 id="reflexion" class="card-title"><i class="bi bi-clipboard-data"></i> 11. Reflexión y Análisis Financiero del Proyecto</h2>
+                        
+                        <!-- Reflexión sobre los Datos Proyectados -->
+                        <h3 class="mt-4"><i class="bi bi-graph-up-arrow"></i> 1. Reflexión sobre los Datos Proyectados</h3>
+                        <div class="mb-3">
+                            <p><strong>a. Escalabilidad del Modelo de Negocio:</strong></p>
+                            <p>El modelo muestra una clara escalabilidad: a medida que aumentan las ventas de vehículos y las tasas de conversión de seguros, los ingresos por comisiones también crecen proporcionalmente. Esto indica que inversiones adicionales en marketing y capacitación podrían traducirse en mayores ingresos.</p>
+                        </div>
+                        <div class="mb-3">
+                            <p><strong>b. Importancia de la Tasa de Conversión:</strong></p>
+                            <p>Las tasas de conversión del 30%, 40% y 50% demuestran que incluso incrementos modestos en la efectividad de las ventas pueden tener un impacto significativo en los ingresos. Mejorar estas tasas mediante estrategias de ventas más efectivas podría acelerar la recuperación de la inversión y aumentar la rentabilidad.</p>
+                        </div>
+                        <div class="mb-3">
+                            <p><strong>c. Diversificación de Coberturas:</strong></p>
+                            <p>La distribución de pólizas entre Terceros Completo (60%) y Todo Riesgo (40%) sugiere una diversificación equilibrada que puede atraer a diferentes segmentos de clientes, optimizando así las oportunidades de ventas.</p>
+                        </div>
+
+                        <!-- Estimación de la Inversión Necesaria -->
+                        <h3 class="mt-4"><i class="bi bi-cash-stack"></i> 2. Estimación de la Inversión Necesaria</h3>
+                        <div class="mb-3">
+                            <p>Para determinar cuánto se debería invertir y en qué aspectos, consideremos los siguientes componentes clave:</p>
+                        </div>
+                        
+                        <h4 class="mt-3"><i class="bi bi-arrow-right"></i> a. Costos Iniciales:</h4>
+                        <ul>
+                            <li><strong>Instalación de la Oficina:</strong>
+                                <ul>
+                                    <li>Alquiler de espacio: $500,000 ARS</li>
+                                    <li>Mobiliario y equipos: $300,000 ARS</li>
+                                </ul>
+                            </li>
+                            <li><strong>Licencias y Permisos:</strong>
+                                <ul>
+                                    <li>Registro legal y permisos operativos: $200,000 ARS</li>
+                                </ul>
+                            </li>
+                            <li><strong>Marketing y Publicidad Inicial:</strong>
+                                <ul>
+                                    <li>Campañas de lanzamiento: $400,000 ARS</li>
+                                </ul>
+                            </li>
+                            <li><strong>Software y Tecnología:</strong>
+                                <ul>
+                                    <li>CRM y herramientas de gestión de clientes: $200,000 ARS</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><strong>Total Costos Iniciales Estimados:</strong> <strong>$1,600,000 ARS</strong></p>
+
+                        <h4 class="mt-3"><i class="bi bi-arrow-right"></i> b. Costos Operativos Mensuales:</h4>
+                        <ul>
+                            <li><strong>Salarios:</strong>
+                                <ul>
+                                    <li>Productor de Seguros: $300,000 ARS</li>
+                                    <li>Personal de Soporte y Ventas: $200,000 ARS</li>
+                                </ul>
+                            </li>
+                            <li><strong>Marketing Continuo:</strong>
+                                <ul>
+                                    <li>Publicidad digital y tradicional: $150,000 ARS</li>
+                                </ul>
+                            </li>
+                            <li><strong>Gastos Generales:</strong>
+                                <ul>
+                                    <li>Servicios (agua, luz, internet): $50,000 ARS</li>
+                                    <li>Suministros y otros: $50,000 ARS</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><strong>Total Costos Operativos Mensuales Estimados:</strong> <strong>$750,000 ARS</strong></p>
+
+                        <!-- Proyección de Ingresos y Recuperación de la Inversión -->
+                        <h3 class="mt-4"><i class="bi bi-graph-up"></i> 3. Proyección de Ingresos y Recuperación de la Inversión</h3>
+                        <div class="mb-3">
+                            <p>Basándonos en los datos proporcionados, analicemos dos escenarios: <strong>Conservador</strong> (50 vehículos/mes, 30% conversión) y <strong>Optimista</strong> (100 vehículos/mes, 50% conversión).</p>
+                        </div>
+                        
+                        <!-- Escenario Conservador -->
+                        <h4 class="mt-3"><i class="bi bi-arrow-right"></i> a. Escenario Conservador:</h4>
+                        <ul>
+                            <li><strong>Vehículos Vendidos:</strong> 50/mes</li>
+                            <li><strong>Tasa de Conversión:</strong> 30%</li>
+                            <li><strong>Pólizas Vendidas:</strong> 15/mes
+                                <ul>
+                                    <li>Terceros Completo: 9 pólizas</li>
+                                    <li>Todo Riesgo: 6 pólizas</li>
+                                </ul>
+                            </li>
+                            <li><strong>Ingresos por Comisiones:</strong>
+                                <ul>
+                                    <li>Terceros Completo: 9 x $90,000 ARS = <strong>$810,000 ARS</strong></li>
+                                    <li>Todo Riesgo: 6 x $180,000 ARS = <strong>$1.080.000 ARS</strong></li>
+                                    <li><strong>Total Ingresos Mensuales:</strong> <strong>$1.890.000 ARS</strong></li>
+                                </ul>
+                            </li>
+                            <li><strong>Ingresos Netos Mensuales:</strong>
+                                <ul>
+                                    <li>Ingresos Totales: $1.890.000 ARS</li>
+                                    <li>Costos Operativos: $750,000 ARS</li>
+                                    <li><strong>Ingresos Netos:</strong> $1.140.000 ARS</li>
+                                </ul>
+                            </li>
+                            <li><strong>Tiempo de Recuperación de la Inversión Inicial:</strong>
+                                <ul>
+                                    <li>Inversión Inicial: $1.600.000 ARS</li>
+                                    <li>Ingresos Netos Mensuales: $1.140.000 ARS</li>
+                                    <li><strong>Tiempo para Recuperar la Inversión:</strong> Aproximadamente 1.4 meses</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Escenario Optimista -->
+                        <h4 class="mt-3"><i class="bi bi-arrow-right"></i> b. Escenario Optimista:</h4>
+                        <ul>
+                            <li><strong>Vehículos Vendidos:</strong> 100/mes</li>
+                            <li><strong>Tasa de Conversión:</strong> 50%</li>
+                            <li><strong>Pólizas Vendidas:</strong> 50/mes
+                                <ul>
+                                    <li>Terceros Completo: 30 pólizas</li>
+                                    <li>Todo Riesgo: 20 pólizas</li>
+                                </ul>
+                            </li>
+                            <li><strong>Ingresos por Comisiones:</strong>
+                                <ul>
+                                    <li>Terceros Completo: 30 x $90,000 ARS = <strong>$2.700.000 ARS</strong></li>
+                                    <li>Todo Riesgo: 20 x $180,000 ARS = <strong>$3.600.000 ARS</strong></li>
+                                    <li><strong>Total Ingresos Mensuales:</strong> <strong>$6.300.000 ARS</strong></li>
+                                </ul>
+                            </li>
+                            <li><strong>Ingresos Netos Mensuales:</strong>
+                                <ul>
+                                    <li>Ingresos Totales: $6.300.000 ARS</li>
+                                    <li>Costos Operativos: $750,000 ARS</li>
+                                    <li><strong>Ingresos Netos:</strong> $5.550.000 ARS</li>
+                                </ul>
+                            </li>
+                            <li><strong>Tiempo de Recuperación de la Inversión Inicial:</strong>
+                                <ul>
+                                    <li>Inversión Inicial: $1.600.000 ARS</li>
+                                    <li>Ingresos Netos Mensuales: $5.550.000 ARS</li>
+                                    <li><strong>Tiempo para Recuperar la Inversión:</strong> Aproximadamente 0.29 meses (~9 días)</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Reflexiones Finales -->
+                        <h3 class="mt-4"><i class="bi bi-lightbulb-fill"></i> 4. Reflexiones Finales</h3>
+                        <div class="mb-3">
+                            <p><strong>a. Alta Rentabilidad y Rápida Recuperación:</strong></p>
+                            <p>Los escenarios analizados muestran que, incluso en condiciones conservadoras, la inversión inicial puede recuperarse en aproximadamente 1.4 meses. En condiciones optimistas, la recuperación es casi inmediata, en menos de un mes.</p>
+                        </div>
+                        <div class="mb-3">
+                            <p><strong>b. Importancia de la Gestión Eficiente:</strong></p>
+                            <p>Para maximizar la rentabilidad y minimizar el tiempo de recuperación, es crucial:</p>
+                            <ul>
+                                <li><strong>Optimizar las Tácticas de Venta:</strong> Capacitación continua del personal para mejorar las tasas de conversión.</li>
+                                <li><strong>Estrategias de Marketing Efectivas:</strong> Invertir en canales que generen mayor retorno sobre la inversión.</li>
+                                <li><strong>Monitoreo y Ajuste Constante:</strong> Evaluar periódicamente el desempeño y ajustar estrategias según sea necesario.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-3">
+                            <p><strong>c. Riesgos a Considerar:</strong></p>
+                            <ul>
+                                <li><strong>Variabilidad en las Ventas de Vehículos:</strong> Factores externos como la economía pueden afectar las ventas de automóviles y, por ende, las pólizas de seguros.</li>
+                                <li><strong>Competencia en el Mercado:</strong> Otros asesores o compañías de seguros podrían influir en las tasas de conversión.</li>
+                                <li><strong>Cambios Regulatorios:</strong> Alteraciones en las normativas de seguros podrían impactar las operaciones.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </div>
-
-</body>
+    </body>
 </html>
