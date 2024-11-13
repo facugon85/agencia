@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Concesionaria de Automóviles</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #282828;
+            color: #FFFFFF;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #ffbc42;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            text-align: center;
+            color: #FFFFFF;
+            border: 1px solid #B2BABB;
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #ffbc42;
+            color: #282828;
+        }
+        a {
+            color: #ffbc42;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        p, li {
+            margin: 10px 0;
+        }
+        /* Personaliza los estilos según tus necesidades */
+    </style>
+</head>
+<body>
+
+    <h1>Proyecto, consecionaria de autos.</h1>
+
+    <h3>Presentado por: Facundo Gonzalez y Alejandra Furchi</h3>
+    <h3>Fecha: miercoles 13 de 2024</h3>
+
+    <h2>Índice</h2>
+    <ol>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#objetivos">Objetivos de la Proyección</a></li>
+        <li><a href="#supuestos">Supuestos Iniciales</a></li>
+        <li><a href="#calculo-primas">Cálculo de Primas Anuales y Comisiones</a></li>
+        <li><a href="#analisis-escenarios">Análisis de Escenarios</a></li>
+        <li><a href="#proyeccion-ventas">Proyección de Ventas Mensuales de Pólizas</a></li>
+        <li><a href="#distribucion-polizas">Distribución de Pólizas por Tipo de Cobertura</a></li>
+        <li><a href="#calculo-ingresos">Cálculo de Ingresos Mensuales por Tipo de Cobertura</a></li>
+        <li><a href="#proyeccion-ingresos">Proyección de Ingresos Semestrales</a></li>
+        <li><a href="#consideraciones">Consideraciones Adicionales</a></li>
+        <li><a href="#conclusiones">Conclusiones</a></li>
+        <li><a href="#recomendaciones">Recomendaciones</a></li>
+        <li><a href="#anexos">Anexos</a></li>
+        <li><a href="#preguntas">Preguntas y Respuestas</a></li>
+    </ol>
+
+    <h2 id="introduccion">1. Introducción</h2>
+
+    <p><strong>Contexto del Proyecto:</strong></p>
+    <p>Este proyecto estima los ingresos potenciales de un Productor Asesor de Seguros al colaborar con una concesionaria que vende entre 50 y 100 vehículos mensuales.</p>
+
+    <p><strong>Importancia:</strong></p>
+    <p>Entender el potencial de ingresos es esencial para la planificación estratégica y financiera en el competitivo sector de seguros automotrices en Argentina.</p>
+
+    <h2 id="objetivos">2. Objetivos de la Proyección</h2>
+
+    <ul>
+        <li>Estimar los ingresos mensuales y semestrales para diferentes volúmenes de ventas.</li>
+        <li>Analizar múltiples escenarios entre 50 y 100 vehículos vendidos mensualmente.</li>
+        <li>Identificar factores clave que afectan los ingresos y proponer estrategias para optimizarlos.</li>
+    </ul>
+
+    <h2 id="supuestos">3. Supuestos Iniciales</h2>
+
+    <p><strong>Volumen de Ventas Mensuales de la Concesionaria:</strong></p>
+    <ul>
+        <li>Rango de Ventas: Entre 50 y 100 vehículos.</li>
+    </ul>
+
+    <p><strong>Tasa de Conversión de Ventas de Seguros:</strong></p>
+    <ul>
+        <li>Conservadora: 30% de los compradores adquieren seguro.</li>
+        <li>Moderada: 40% de los compradores adquieren seguro.</li>
+        <li>Optimista: 50% de los compradores adquieren seguro.</li>
+    </ul>
+
+    <p><strong>Distribución de Tipos de Cobertura:</strong></p>
+    <ul>
+        <li>Terceros Completo: 60% de las pólizas vendidas.</li>
+        <li>Todo Riesgo: 40% de las pólizas vendidas.</li>
+    </ul>
+
+    <p><strong>Comisión por Póliza:</strong></p>
+    <ul>
+        <li>Ambos Tipos de Cobertura: 15% de la prima anual.</li>
+    </ul>
+
+    <p><strong>Prima Anual Promedio:</strong></p>
+    <ul>
+        <li>Terceros Completo: 5% del valor del vehículo.</li>
+        <li>Todo Riesgo: 10% del valor del vehículo.</li>
+    </ul>
+
+    <p><strong>Valor Promedio del Vehículo:</strong></p>
+    <ul>
+        <li>Precio Medio: $12.000.000.</li>
+    </ul>
+
+    <h2 id="calculo-primas">4. Cálculo de Primas Anuales y Comisiones</h2>
+
+    <p><strong>Prima Anual:</strong></p>
+    <ul>
+        <li>Terceros Completo: 5% x $12.000.000 = <strong>$600.000</strong>.</li>
+        <li>Todo Riesgo: 10% x $12.000.000 = <strong>$1.200.000</strong>.</li>
+    </ul>
+
+    <p><strong>Comisión por Póliza:</strong></p>
+    <ul>
+        <li>Terceros Completo: 15% x $600.000 = <strong>$90.000</strong>.</li>
+        <li>Todo Riesgo: 15% x $1.200.000 = <strong>$180.000</strong>.</li>
+    </ul>
+
+    <h2 id="analisis-escenarios">5. Análisis de Escenarios</h2>
+
+    <p>Para una proyección más detallada, analizaremos tres escenarios de tasas de conversión y diferentes volúmenes de ventas dentro del rango de 50 a 100 vehículos.</p>
+
+    <p><strong>Escenarios de Tasa de Conversión:</strong></p>
+    <ul>
+        <li>Conservador: 30%</li>
+        <li>Moderado: 40%</li>
+        <li>Optimista: 50%</li>
+    </ul>
+
+    <p><strong>Volúmenes de Ventas Analizados:</strong></p>
+    <ul>
+        <li>50 vehículos mensuales</li>
+        <li>75 vehículos mensuales</li>
+        <li>100 vehículos mensuales</li>
+    </ul>
+
+    <h2 id="proyeccion-ventas">6. Proyección de Ventas Mensuales de Pólizas</h2>
+
+    <p><strong>Cálculo General:</strong></p>
+    <p>Pólizas Vendidas = Vehículos Vendidos x Tasa de Conversión</p>
+
+    <p><strong>Resultados:</strong></p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Vehículos Vendidos</th>
+                <th>30% Conversión</th>
+                <th>40% Conversión</th>
+                <th>50% Conversión</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>50</td>
+                <td>15 pólizas</td>
+                <td>20 pólizas</td>
+                <td>25 pólizas</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>23 pólizas</td>
+                <td>30 pólizas</td>
+                <td>38 pólizas</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>30 pólizas</td>
+                <td>40 pólizas</td>
+                <td>50 pólizas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><em>Nota: Para fracciones de pólizas, se considerará el número entero más cercano.</em></p>
+
+    <h2 id="distribucion-polizas">7. Distribución de Pólizas por Tipo de Cobertura</h2>
+
+    <p><strong>Cálculo General:</strong></p>
+    <ul>
+        <li>Terceros Completo: 60% de las pólizas vendidas.</li>
+        <li>Todo Riesgo: 40% de las pólizas vendidas.</li>
+    </ul>
+
+    <p><strong>Ejemplo para 50 vehículos y 30% de conversión (15 pólizas):</strong></p>
+    <ul>
+        <li>Terceros Completo: 60% x 15 = 9 pólizas.</li>
+        <li>Todo Riesgo: 40% x 15 = 6 pólizas.</li>
+    </ul>
+
+    <p><strong>Tabla de Distribución:</strong></p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Escenario</th>
+                <th>Terceros Completo</th>
+                <th>Todo Riesgo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>50 Vehículos - 30% Conversión</td>
+                <td>9 pólizas</td>
+                <td>6 pólizas</td>
+            </tr>
+            <tr>
+                <td>75 Vehículos - 40% Conversión</td>
+                <td>18 pólizas</td>
+                <td>12 pólizas</td>
+            </tr>
+            <tr>
+                <td>100 Vehículos - 50% Conversión</td>
+                <td>30 pólizas</td>
+                <td>20 pólizas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="calculo-ingresos">8. Cálculo de Ingresos Mensuales por Tipo de Cobertura</h2>
+
+    <p><strong>Cálculo General:</strong></p>
+    <ul>
+        <li>Ingresos Terceros Completo: Número de pólizas x $90.000</li>
+        <li>Ingresos Todo Riesgo: Número de pólizas x $180.000</li>
+    </ul>
+
+    <p><strong>Ejemplo para 50 vehículos y 30% de conversión:</strong></p>
+    <ul>
+        <li>Ingresos Terceros Completo: 9 x $90.000 = $810.000</li>
+        <li>Ingresos Todo Riesgo: 6 x $180.000 = $1.080.000</li>
+        <li><strong>Total Ingresos Mensuales: $1.890.000</strong></li>
+    </ul>
+
+    <p><strong>Tabla de Ingresos Mensuales:</strong></p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Escenario</th>
+                <th>Ingresos Mensuales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>50 Vehículos - 30% Conversión</td>
+                <td>$1.890.000</td>
+            </tr>
+            <tr>
+                <td>75 Vehículos - 40% Conversión</td>
+                <td>$4.050.000</td>
+            </tr>
+            <tr>
+                <td>100 Vehículos - 50% Conversión</td>
+                <td>$6.300.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="proyeccion-ingresos">9. Proyección de Ingresos Semestrales</h2>
+
+    <p><strong>Cálculo General:</strong></p>
+    <p>Ingresos Semestrales = Ingresos Mensuales x 6 meses</p>
+
+    <p><strong>Resultados:</strong></p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Escenario</th>
+                <th>Ingresos Semestrales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>50 Vehículos - 30% Conversión</td>
+                <td>$11.340.000</td>
+            </tr>
+            <tr>
+                <td>75 Vehículos - 40% Conversión</td>
+                <td>$24.300.000</td>
+            </tr>
+            <tr>
+                <td>100 Vehículos - 50% Conversión</td>
+                <td>$37.800.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Continúa con el resto del documento siguiendo la misma estructura y estilos -->
+
+    <!-- Incluye jQuery y Bootstrap JS si es necesario -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
